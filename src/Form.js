@@ -35,7 +35,7 @@ export default class Form extends Component {
       redirect: 'follow'
     };
 
-    await fetch("https://api.openai.com/v1/engines/text-curie-001/completions?", requestOptions)
+    await fetch("https://api.openai.com/v1/engines/text-curie-001/completions", requestOptions)
       .then(response => response.json())
       .then(result =>  value = result.choices[0].text)
       .then(newValue => this.setState({ entry: currentEntry, result: value }))
@@ -66,7 +66,7 @@ export default class Form extends Component {
   render() {
     return (
       <form className="form-container shadow">
-        <label className="hidden" for="entry">Entry Field</label>
+        <label className="hidden" htmlFor="entry">Entry Field</label>
         <input className="input shadow"
           type='text'
           name='entry'
