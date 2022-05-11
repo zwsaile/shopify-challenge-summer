@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shopify-challenge-summer/static/css/main.18714fcd.css",
+    "main.js": "/shopify-challenge-summer/static/js/main.98417ff0.js",
+    "index.html": "/shopify-challenge-summer/index.html",
+    "main.18714fcd.css.map": "/shopify-challenge-summer/static/css/main.18714fcd.css.map",
+    "main.98417ff0.js.map": "/shopify-challenge-summer/static/js/main.98417ff0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18714fcd.css",
+    "static/js/main.98417ff0.js"
+  ]
+}
