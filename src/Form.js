@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import "./styles/Form.css"
-// import apiCall from "./api-call"
+import { config } from "./config"
 
+var key = config.SECRET_API_KEY;
 let value;
 
 export default class Form extends Component {
@@ -19,7 +20,7 @@ export default class Form extends Component {
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    myHeaders.append("Authorization", "Bearer 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");
+    myHeaders.append("Authorization", `Bearer ${key}`);
 
     var raw = JSON.stringify({
       "prompt": `Tell me a 6 sentence bedtime story about ${this.state.entry}`,
