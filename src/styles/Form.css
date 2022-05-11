@@ -1,0 +1,42 @@
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFFFF;
+  width: 70vw;
+  height: 10vh;
+  margin-bottom: 7vh;
+  border-radius: 10px;
+}
+
+.input {
+  background-color: #C5D8E8;
+  height: 3vh;
+  width: 30vw;
+  border: none;
+  border-radius: 6px;
+  outline-color: #6D9DC5;
+}
+
+.submit-btn {
+  background-color: #C5D8E8;
+  font-weight: 600;
+  height: 4vh;
+  width: 10vw;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+}
+
+.no-cards {
+  background-color: #FFFFFF;
+  font-size: 1.5rem;
+  width: 35vw;
+  height: auto;
+  padding: 2%;
+  border-radius: 6px;
+}

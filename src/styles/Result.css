@@ -1,0 +1,18 @@
+.result-card {
+  background-color: #C5D8E8;
+  height: auto;
+  width: 35vw;
+  padding: 3vh 2vw;
+  border-radius: 8px;
+}
+
+.card-delete {
+  border: none;
+  border-radius: 4px;
+  height: 3vh;
+  cursor: pointer;
+}
+
+.card-delete:hover {
+  transform: scale(1.1);
+}
