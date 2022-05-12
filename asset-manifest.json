@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/shopify-challenge-summer/static/css/main.18714fcd.css",
-    "main.js": "/shopify-challenge-summer/static/js/main.688a8d35.js",
+    "main.js": "/shopify-challenge-summer/static/js/main.d047640a.js",
     "index.html": "/shopify-challenge-summer/index.html",
     "main.18714fcd.css.map": "/shopify-challenge-summer/static/css/main.18714fcd.css.map",
-    "main.688a8d35.js.map": "/shopify-challenge-summer/static/js/main.688a8d35.js.map"
+    "main.d047640a.js.map": "/shopify-challenge-summer/static/js/main.d047640a.js.map"
   },
   "entrypoints": [
     "static/css/main.18714fcd.css",
-    "static/js/main.688a8d35.js"
+    "static/js/main.d047640a.js"
   ]
 }
