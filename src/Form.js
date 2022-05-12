@@ -2,7 +2,8 @@ import React, { Component } from "react"
 import "./styles/Form.css"
 import { config } from "./config"
 
-var key = config.SECRET_API_KEY;
+var key1 = config.apiKey1;
+var key2 = config.apiKey2;
 let value;
 
 export default class Form extends Component {
@@ -20,7 +21,7 @@ export default class Form extends Component {
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    myHeaders.append("Authorization", `Bearer ${key}`);
+    myHeaders.append("Authorization", `Bearer ${key1}${key2}`);
 
     var raw = JSON.stringify({
       "prompt": `Tell me a 6 sentence bedtime story about ${this.state.entry}`,
@@ -35,7 +36,7 @@ export default class Form extends Component {
       redirect: 'follow'
     };
 
-    await fetch("https://api.openai.com/v1/engines/text-curie-001/completions", requestOptions)
+    await fetch("https://api.openai.com/v1/engines/text-curie-001/completions?", requestOptions)
       .then(response => response.json())
       .then(result =>  value = result.choices[0].text)
       .then(newValue => this.setState({ entry: currentEntry, result: value }))
