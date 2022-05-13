@@ -49,20 +49,21 @@ export default class Form extends Component {
 
   async submitCard(event) {
     event.preventDefault()
-    await this.callApi()
-    const newCard = {
-      id: Date.now(),
-      entry: this.state.entry,
-      result: value.split(";").join("\n")
-    }
+    if (this.state.entry !== "") {
+      await this.callApi()
+      const newCard = {
+        id: Date.now(),
+        entry: this.state.entry,
+        result: value.split(";").join("\n")
+      }
     this.props.addCard(newCard)
     this.clearInputs()
+    }
   }
 
   clearInputs = () => {
     this.setState({ entry: "", result: ""})
   }
-
 
   render() {
     return (
