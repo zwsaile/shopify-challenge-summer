@@ -19,6 +19,8 @@ export default class Form extends Component {
 
     let currentEntry = this.state.entry
 
+    this.props.displayLoadMessage()
+
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("Authorization", `Bearer ${key1}${key2}`);
@@ -49,21 +51,22 @@ export default class Form extends Component {
 
   async submitCard(event) {
     event.preventDefault()
-    if (this.state.entry !== "") {
-      await this.callApi()
-      const newCard = {
-        id: Date.now(),
-        entry: this.state.entry,
-        result: value.split(";").join("\n")
-      }
-    this.props.addCard(newCard)
-    this.clearInputs()
+    await this.callApi()
+    const newCard = {
+      id: Date.now(),
+      key: Date.now(),
+      entry: this.state.entry,
+      result: value.split(";").join("\n")
     }
+    this.props.addCard(newCard)
+    this.props.displayLoadMessage()
+    this.clearInputs()
   }
 
   clearInputs = () => {
     this.setState({ entry: "", result: ""})
   }
+
 
   render() {
     return (
@@ -77,7 +80,7 @@ export default class Form extends Component {
           value={this.state.entry}
           onChange={event => this.handleChange(event)}
         />
-        <button className="submit-btn shadow" onClick={event => this.submitCard(event)}>Submit</button>
+        <button type="submit" className="submit-btn shadow" onClick={event => this.submitCard(event)}>Submit</button>
       </form>
     )
   }
