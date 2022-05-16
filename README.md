@@ -63,7 +63,7 @@ fetch("https://api.openai.com/v1/engines/text-curie-001/completions", {
 
 ## Application In Use
 
-![App Screenshot](assets/app-in-use.gif)
+![Application GIF](assets/app-in-use.gif)
 
 
 ## Running Tests
@@ -71,7 +71,7 @@ fetch("https://api.openai.com/v1/engines/text-curie-001/completions", {
 To run tests, run the following command
 
 ```bash
-  npm run test
+  npm run cypress
 ```
 
 
