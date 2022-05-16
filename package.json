@@ -19,6 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "cypress": "./node_modules/.bin/cypress open",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -40,6 +41,8 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^9.6.1",
+    "cypress-file-upload": "^5.0.8",
     "gh-pages": "^4.0.0"
   }
 }

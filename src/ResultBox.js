@@ -2,7 +2,7 @@ import React from "react"
 import Result from "./Result"
 import "./styles/ResultBox.css"
 
-const ResultBox = ({cards, deleteCard}) => {
+const ResultBox = ({cards, key, deleteCard}) => {
   const resultCards = cards.map(card => {
     return (
       <article>
@@ -10,7 +10,7 @@ const ResultBox = ({cards, deleteCard}) => {
           entry={card.entry}
           result={card.result}
           id={card.id}
-          key={card.id}
+          key={key}
           deleteCard={deleteCard}
         />
       </article>

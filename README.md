@@ -1,8 +1,12 @@
-# Project Title
+# AI Bedtime Storyteller
 
-AI Bedtime Storyteller is an application that will generate unique bedtime stories based on user prompts.
+## Deployment
+
+Deployment can be found at [this link](https://zwsaile.github.io/shopify-challenge-summer/)
 
 ## About
+
+AI Bedtime Storyteller is an application that will generate unique bedtime stories based on user prompts.
 
 This application utilizes the OpenAI API, which is capable of understanding and generating natural language and code. This API can be used for everything from content generation to semantic search and classification.
 
@@ -16,7 +20,9 @@ AI Bedtime Storyteller uses this API to return a generated bedtime story based o
 
 ## Tech Stack
 
-**Client:** React, CSS
+- **Client -** React, CSS
+
+- **Testing -** Cypress
 
 
 ## Documentation
@@ -52,12 +58,12 @@ fetch("https://api.openai.com/v1/engines/text-curie-001/completions", {
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `API_KEY` | `string` | **Required**. Your API key |
+| `API_KEY` | `string` | **Required** Your API key |
 
 
-## Screenshots
+## Application In Use
 
-![App Screenshot](assets/app-screenshot.png)
+![App Screenshot](assets/app-in-use.gif)
 
 
 ## Running Tests
@@ -94,14 +100,3 @@ Start the server
 ```bash
   npm run start
 ```
-
-
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
-
-Deployment can be found at [this link](https://zwsaile.github.io/shopify-challenge-summer/)
